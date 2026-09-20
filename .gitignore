@@ -1,0 +1,8 @@
+outputs/
+analysis/data/
+analysis/model_outputs/
+.DS_Store
+__pycache__/
+*.pyc
+.Rhistory
+.Rproj.user/

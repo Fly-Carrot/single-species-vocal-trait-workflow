@@ -48,15 +48,32 @@ print(kw_summary, row.names = FALSE)
 dir.create(model_output_dir, recursive = TRUE, showWarnings = FALSE)
 write.csv(kw_summary, file.path(model_output_dir, "kruskal_wallis_summary.csv"), row.names = FALSE)
 
-pairwise_rows <- lapply(minute_responses, function(response) {
-  result <- pairwise.wilcox.test(test_dat[[response]], test_dat$period, p.adjust.method = "BH")
-  mat <- as.data.frame(as.table(result$p.value), stringsAsFactors = FALSE)
-  mat <- mat[!is.na(mat$Freq), , drop = FALSE]
-  names(mat) <- c("group_1", "group_2", "p_adjusted")
-  mat$trait <- response
-  mat[, c("trait", "group_1", "group_2", "p_adjusted")]
-})
+pairwise_summary <- function(group_var) {
+  rows <- lapply(minute_responses, function(response) {
+    result <- pairwise.wilcox.test(
+      test_dat[[response]],
+      test_dat[[group_var]],
+      p.adjust.method = "BH",
+      exact = FALSE
+    )
+    mat <- as.data.frame(as.table(result$p.value), stringsAsFactors = FALSE)
+    mat <- mat[!is.na(mat$Freq), , drop = FALSE]
+    names(mat) <- c("group_1", "group_2", "p_adjusted")
+    mat$trait <- response
+    mat$grouping_variable <- group_var
+    mat[, c("trait", "grouping_variable", "group_1", "group_2", "p_adjusted")]
+  })
+  do.call(rbind, rows)
+}
 
-pairwise_summary <- do.call(rbind, pairwise_rows)
-write.csv(pairwise_summary, file.path(model_output_dir, "period_pairwise_wilcoxon.csv"), row.names = FALSE)
+write.csv(
+  pairwise_summary("site_code"),
+  file.path(model_output_dir, "site_pairwise_wilcoxon.csv"),
+  row.names = FALSE
+)
+write.csv(
+  pairwise_summary("period"),
+  file.path(model_output_dir, "period_pairwise_wilcoxon.csv"),
+  row.names = FALSE
+)
 cat("Saved summary tables to analysis/model_outputs/.\n")

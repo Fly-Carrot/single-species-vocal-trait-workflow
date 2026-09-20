@@ -20,7 +20,7 @@ The case study used Avisoft-SASLab Pro and extracted seven traits.
 
 1. Open a validated clip.
 2. Set the spectrogram view for the focal signal.
-3. inspect and clean the signal where needed.
+3. Inspect and clean the signal where needed.
 4. Detect or mark the syllable boundaries.
 5. Review every boundary.
 6. Export the seven measurements with the source ID.

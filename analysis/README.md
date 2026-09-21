@@ -1,6 +1,6 @@
 # Analysis Lessons
 
-These scripts use the public, analysis-ready tables from [Fly-Carrot/Raw-Data-01](https://github.com/Fly-Carrot/Raw-Data-01).
+These scripts use the public, analysis-ready tables from [Fly-Carrot/JAPPL-2026-01502-Supplementary](https://github.com/Fly-Carrot/JAPPL-2026-01502-Supplementary).
 
 ## 1. Download the Data
 

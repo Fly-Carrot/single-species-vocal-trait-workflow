@@ -63,4 +63,4 @@ analysis/    公开数据下载与 R 分析脚本
 TODO.md      后续材料与开发计划
 ```
 
-论文对应的公开数据表位于 [Fly-Carrot/Raw-Data-01](https://github.com/Fly-Carrot/Raw-Data-01)。
+论文对应的公开数据表位于 [Fly-Carrot/JAPPL-2026-01502-Supplementary](https://github.com/Fly-Carrot/JAPPL-2026-01502-Supplementary)。

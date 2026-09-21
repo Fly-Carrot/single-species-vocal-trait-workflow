@@ -9,7 +9,7 @@ from pathlib import Path
 
 
 ROOT = Path(__file__).resolve().parents[1]
-BASE_URL = "https://raw.githubusercontent.com/Fly-Carrot/Raw-Data-01/main/"
+BASE_URL = "https://raw.githubusercontent.com/Fly-Carrot/JAPPL-2026-01502-Supplementary/main/"
 
 FILES = {
     "Raw data/01_minute_level_vocal_traits.csv": "analysis/data/raw/01_minute_level_vocal_traits.csv",

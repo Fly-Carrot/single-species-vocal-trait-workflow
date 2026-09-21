@@ -85,7 +85,7 @@ The full PAM network contained 21 sites. The focal-species trait analysis used 2
 
 ## Companion Data
 
-The manuscript-aligned public tables are maintained in [Fly-Carrot/Raw-Data-01](https://github.com/Fly-Carrot/Raw-Data-01). The download script fetches a small analysis-ready subset from that repository.
+The manuscript-aligned public tables are maintained in [Fly-Carrot/JAPPL-2026-01502-Supplementary](https://github.com/Fly-Carrot/JAPPL-2026-01502-Supplementary). The download script fetches a small analysis-ready subset from that repository.
 
 ## Use and Citation
 

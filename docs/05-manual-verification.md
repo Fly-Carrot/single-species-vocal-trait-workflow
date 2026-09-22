@@ -31,3 +31,5 @@ Use [the validation template](../data/templates/manual-validation-template.csv) 
 ## Student Exercise
 
 Two students should review the same small set independently. Compare their decisions, discuss disagreements, and update the written rule when a case is ambiguous.
+
+Continue with the [illustrated Audition lesson](09-audition-audio-preparation.md) for preparing a validated vocal clip.

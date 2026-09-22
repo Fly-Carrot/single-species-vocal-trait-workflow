@@ -6,7 +6,7 @@
   <img src="assets/workflow-overview.png" alt="从野外录音到生态推断的单物种鸣声特征分析流程" width="100%">
 </p>
 
-**[开始学习](docs/00-orientation.md) · [运行分析](analysis/README.md) · [查看后续计划](TODO.md) · [English](README.md)**
+**[开始学习](docs/00-orientation.md) · [Audition 图解](docs/09-audition-audio-preparation.md) · [Avisoft 图解](docs/10-avisoft-vocal-trait-measurement.md) · [运行分析](analysis/README.md) · [后续计划](TODO.md) · [English](README.md)**
 
 ## 你将学会什么
 

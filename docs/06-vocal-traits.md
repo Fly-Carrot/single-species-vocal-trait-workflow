@@ -37,6 +37,6 @@ source_file, candidate_id, segment_id, validation_decision, confidence
 
 The project produced 9,142 validated segment-level records before minute aggregation.
 
-## Planned Visual Lesson
+## Illustrated Lesson
 
-The next release will add Avisoft screenshots, the project preset, and one reference export. These materials will make the GUI steps repeatable for a classroom exercise.
+Follow the [Avisoft walkthrough](10-avisoft-vocal-trait-measurement.md) to see the workshop's measurement controls, element markings, and output columns. The saved project preset and a checked reference export are the next materials for the classroom exercise.

@@ -42,3 +42,5 @@ Every clip receives a manifest row with its source file, clip number, start time
 - The final clip may be shorter than the requested length.
 - Audio format and sample rate remain unchanged.
 - The clip manifest links every output to its source file.
+
+These short clips support model screening. After a focal-species candidate has been verified, follow the separate [Audition lesson](09-audition-audio-preparation.md) to prepare it for vocal-trait measurement.

@@ -15,11 +15,11 @@ The repository already covers the overall study design, example audio, data chec
 | Priority | Module | Work to add | Material needed | Deliverable | Completion check | Status |
 |---|---|---|---|---|---|---|
 | P0 | Teaching audio | Select four short cases: clear focal song, traffic overlap, mixed species, and weak signal. Preserve source IDs and add use permission. | Approval for selected project clips | Four WAV files, case notes, and an answer key | Every clip has a source ID, teaching purpose, expected decision, and permission record | In progress |
-| P0 | Audition: audio review | Show how to open a source recording, inspect waveform and spectrogram, locate focal vocalizations, and record the review decision. | Screenshots or a short screen recording from the project workflow | `docs/09-audition-audio-preparation.md` with annotated screenshots | A student can locate the same focal event and record the same keep/reject decision | Planned |
-| P0 | Audition: preparation | Show project folder naming, non-destructive editing, channel selection, trimming, documented noise treatment, and WAV export for measurement. | Actual export settings and any saved Audition preset; denoising parameters if used | Reproducible preparation recipe plus before/after examples | Export keeps the focal signal intact, avoids clipping, preserves source linkage, and records every processing step | Waiting for settings |
-| P0 | Avisoft: measurement setup | Show clip import, spectrogram display, axes, analysis window, and project measurement settings. | Avisoft version, saved preset or screenshots of each setting | `docs/10-avisoft-vocal-trait-measurement.md`, preset record, and one reference project | The teaching clip opens with the documented time and frequency display | Waiting for settings |
-| P0 | Avisoft: vocal units | Show how syllables are identified, how boundaries are placed, and how ambiguous or overlapping signals are handled. | One clear case and three difficult cases with confirmed decisions | Annotated examples and a manual-check checklist | Two users assign the same keep/reject decision and comparable syllable boundaries | Planned |
-| P0 | Avisoft: seven traits | Measure syllable count, inter-syllable interval, minimum, maximum, peak and centroid frequencies, and bandwidth; state units and aggregation rules. | One project reference export and the final column mapping | Trait dictionary, worked example, and export template | All seven fields reproduce the reference values within a declared rounding tolerance | Waiting for reference export |
+| P0 | Audition: audio review | Show how to open a source recording, inspect waveform and spectrogram, locate focal vocalizations, and record the review decision. | Four short clips with confirmed review decisions | [Illustrated Audition lesson](docs/09-audition-audio-preparation.md) and case annotations | A student can locate the same focal event and record the same keep/reject decision | Illustrated; practice cases pending |
+| P0 | Audition: preparation | Show project folder naming, non-destructive editing, channel selection, trimming, documented noise treatment, and WAV export for measurement. | Actual export settings, processing record, and clarification of the workshop's 1.5-5 kHz filter example | Preparation recipe plus before/after views | Export keeps the focal signal intact, avoids clipping, preserves source linkage, and records every processing step | Illustrated; project settings pending |
+| P0 | Avisoft: measurement setup | Show clip import, spectrogram display, axes, analysis window, and project measurement settings. | Avisoft version and saved preset or final setting record | [Illustrated Avisoft lesson](docs/10-avisoft-vocal-trait-measurement.md) and one reference project | The teaching clip opens with the documented time and frequency display | Illustrated; preset pending |
+| P0 | Avisoft: vocal units | Show how syllables are identified, how boundaries are placed, and how ambiguous or overlapping signals are handled. | One clear case and three difficult cases with confirmed decisions | Element-marking example and manual-check checklist | Two users assign the same keep/reject decision and comparable syllable boundaries | Interface illustrated; cases pending |
+| P0 | Avisoft: seven traits | Measure syllable count, inter-syllable interval, minimum, maximum, peak and centroid frequencies, and bandwidth; state units and aggregation rules. | One checked reference export and the final column mapping | Trait dictionary, worked example, and export template | All seven fields reproduce the reference values within a declared rounding tolerance | Output columns mapped; reference pending |
 | P0 | Data handoff | Link each measured segment to source clip, site, timestamp, sampling-period block, and minute ID; aggregate segment records to minute-level observations. | A small segment-level export with valid identifiers | R import and aggregation lesson | The worked example produces the expected segment count and minute-level row | Planned |
 | P1 | Quality control | Add a second-pass review on a subset and record disagreements, corrections, missing values, and exclusions. | Agreed review fraction and decision rules | QC form and completed example | Every changed value has a reason and reviewer record | To decide |
 | P1 | Sound-event inference | Add the nine-class model command, labels, configuration, and expected output. | Runnable SED checkpoint and configuration | Small inference lesson | A supplied clip produces the expected event table | Waiting for model files |
@@ -54,12 +54,14 @@ The lesson will use the project settings shown in the approved screenshots. No g
 
 ## Materials to Request
 
-- Audition screenshots or a short screen recording from import to WAV export.
-- The actual Audition export settings and any saved preset.
+- Four reviewed practice clips with expected decisions.
+- The actual Audition export settings and processing record, including which clip version entered frequency measurement.
+- Confirmation of how the workshop's 1.5-5 kHz filter example relates to the focal-species analysis.
 - Avisoft version, spectrogram settings, measurement preset, and batch-export settings.
 - One small Avisoft reference output with confirmed values for all seven traits.
 - Permission to publish four short project audio cases.
 - Runnable sound-event and custom BirdNET model packages for the later inference lessons.
+- Before any public release, review the workshop screenshots for local file paths and replace them with shareable versions where needed.
 
 ## Already Available
 
@@ -69,3 +71,4 @@ The lesson will use the project settings shown in the approved screenshots. No g
 - Public minute-level and site-period datasets.
 - Fourteen BLMM specifications and four habitat GAMs.
 - Public confidence-sensitivity summaries.
+- Workshop screenshots for Audition and Avisoft, now linked from the illustrated lessons.

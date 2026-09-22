@@ -8,7 +8,7 @@ An illustrated learning package for moving from passive acoustic recordings to e
 
 This repository follows the Common Tailorbird (*Orthotomus sutorius*) case study from Shenzhen. It connects field recording, sound-event detection, species screening, manual review, vocal-trait measurement, data aggregation, BLMMs, GAMs, and sensitivity checks.
 
-**[中文指南](README.zh-CN.md) · [Start the lessons](docs/00-orientation.md) · [Audition](docs/09-audition-audio-preparation.md) · [Avisoft](docs/10-avisoft-vocal-trait-measurement.md) · [Run the analysis](analysis/README.md) · [Roadmap](TODO.md)**
+**[中文指南](README.zh-CN.md) · [Start the lessons](docs/00-orientation.md) · [Audition](docs/09-audition-audio-preparation.md) · [Avisoft](docs/10-avisoft-vocal-trait-measurement.md) · [Run the analysis](analysis/README.md)**
 
 ## What You Will Learn
 
@@ -77,7 +77,6 @@ data/        one teaching WAV and reusable templates
 docs/        short lessons for each workflow stage
 scripts/     audio manifest, segmentation, and figure tools
 analysis/    public-data download and R analysis scripts
-TODO.md      planned additions and required materials
 ```
 
 ## Case-Study Numbers
